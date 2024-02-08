@@ -1,0 +1,51 @@
+/* navbar.css */
+
+/* Contenitore principale della barra di navigazione */
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Stili per i link nella barra di navigazione */
+.navbar-link {
+    text-decoration: none;
+    color: #20252b;
+    font-weight: bold;
+    margin: 0 10px; /* Aggiunge un margine tra i link */
+}
+
+/* Stili per il pulsante di accesso */
+.login-button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.login-button img {
+    width: 24px; /* Imposta la larghezza dell'icona desiderata */
+    height: 24px; /* Imposta l'altezza dell'icona desiderata */
+    margin-right: 5px;
+}
+
+.login-button button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.navbar-logo {
+    /* Imposta le dimensioni desiderate per la tua logo */
+    width: 18px;
+    height: 18px;
+    align-self: center; /* Centra verticalmente la logo */
+  }

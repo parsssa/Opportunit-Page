@@ -1,0 +1,42 @@
+/* posizioniInEvidenza.css */
+
+/* Stili generici per il layout della pagina */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stili per il componente PosizioniInEvidenza */
+.posizioni-in-evidenza-container {
+  margin-top: 20px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.posizioni-container {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* Stili per il componente Posizione */
+.posizione {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.posizione img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* Aggiungi stili specifici per gli elementi h3 e p all'interno di Posizione se necessario */
+.posizione h3 {
+  margin-top: 10px;
+}
+
+/* Aggiungi altri stili se necessario */
