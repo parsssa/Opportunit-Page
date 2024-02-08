@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect fill="none" width="24" height="24" />
+  <path class="icon-profile-ext" stroke-miterlimit="10" stroke-linecap="square" stroke="#20252b" stroke-width="1.5px" fill="none" d="M4.364,10.909h0A4.364,4.364,0,0,1,0,6.545V4.364a4.364,4.364,0,0,1,8.727,0V6.545a4.364,4.364,0,0,1-4.364,4.364Z" transform="translate(7.636 5.455)" />
+  <path class="icon-profile-ext" stroke-miterlimit="10" stroke="#20252b" stroke-width="1.5px" fill="none" d="M13.279,2.306A6.53,6.53,0,0,0,8.291,0H5.018A6.531,6.531,0,0,0,0,2.342" transform="translate(5.346 19.2)" />
+  <g stroke-miterlimit="10" stroke-linecap="square" fill="none">
+    <path class="icon-profile-ext2" stroke="none" d="M0,12A12,12,0,1,1,12,24,12,12,0,0,1,0,12Z" />
+    <path class="icon-profile-ext3" fill="#20252b" stroke="none" d="M 12 1.5 C 6.21027946472168 1.5 1.5 6.21027946472168 1.5 12 C 1.5 17.78972053527832 6.21027946472168 22.5 12 22.5 C 17.78972053527832 22.5 22.5 17.78972053527832 22.5 12 C 22.5 6.21027946472168 17.78972053527832 1.5 12 1.5 M 12 0 C 18.62726974487305 0 24 5.372730255126953 24 12 C 24 18.62726974487305 18.62726974487305 24 12 24 C 5.372730255126953 24 0 18.62726974487305 0 12 C 0 5.372730255126953 5.372730255126953 0 12 0 Z" />
+  </g>
+</svg>
