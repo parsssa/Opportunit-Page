@@ -1,0 +1,28 @@
+/* title.css */
+
+.title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-logo {
+    width: 50px; /* Imposta la larghezza desiderata per l'immagine */
+    height: auto; /* Mantieni l'aspetto proporzionato */
+    margin-right: 10px; /* Aggiunge un margine tra l'immagine e il testo */
+  }
+  
+  .title-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-text h1 {
+    font-size: 24px; /* Imposta la dimensione del carattere desiderata per il titolo principale */
+    margin: 0; /* Rimuove il margine predefinito */
+  }
+  
+  .title-text p {
+    font-size: 16px; /* Imposta la dimensione del carattere desiderata per il sottotitolo */
+    margin: 0; /* Rimuove il margine predefinito */
+  }
+  

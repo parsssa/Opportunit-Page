@@ -1,18 +1,24 @@
-import React from 'react';
-import Navbar from './Components/NavigationBar/Navbar';  // Assicurati di impostare il percorso corretto
+import React, { useEffect } from 'react';
+import Navbar from './Components/NavigationBar/Navbar';
+import Title from './Components/Title/Title'
 import PosizioniInEvidenza from './Components/PosizioniInEvidenza/PosizioniInEvidenza';
 
-
-import logo from './logo.svg';
 import './App.css';
+import Search from './Components/Search/Search';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Generali Jobs';
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
       </header>
       <body>
+        <Title/>
+        <Search/>
         <PosizioniInEvidenza/>
       </body>
     </div>
