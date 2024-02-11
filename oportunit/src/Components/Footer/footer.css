@@ -1,0 +1,36 @@
+/* footer.css */
+
+.footer-container {
+    background-color: #333; /* Dark gray background color for the whole footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding to the footer */
+  }
+  
+  .top-rectangle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bottom-rectangle {
+    margin-top: 20px; /* Add some space between the rectangles */
+  }
+  
+  /* Style for the content inside the top rectangle */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold; /* Adjust styling for the logo */
+  }
+  
+  /* Style for the links in the bottom rectangle */
+  .links {
+    margin-bottom: 10px; /* Add some space between the link lines */
+  }
+  
+  /* Additional styling for other elements as needed */
+  

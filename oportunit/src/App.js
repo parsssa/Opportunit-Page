@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
+import './App.css';
 import Navbar from './Components/NavigationBar/Navbar';
 import Title from './Components/Title/Title'
 import PosizioniInEvidenza from './Components/PosizioniInEvidenza/PosizioniInEvidenza';
-
-import './App.css';
+import Footer from './Components/Footer/Footer';
 import Search from './Components/Search/Search';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Title/>
         <Search/>
         <PosizioniInEvidenza/>
+        <Footer/>
       </body>
     </div>
   );

@@ -9,6 +9,18 @@ const PosizioniInEvidenza = () => {
   const positions = [
     { title: 'Posizione 1', description: 'Descrizione 1' },
     { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' },
+    { title: 'Posizione 2', description: 'Descrizione 2' }
     // Aggiungi altre posizioni secondo necessità
   ];
 
