@@ -2,12 +2,11 @@
 
 .navbar-container {
     display: flex;
+    background: none;
     justify-content: space-between; /* Aggiorna per separare il logo e i link */
     align-items: center;
     padding: 10px 20px; /* Aggiorna il padding per adattarlo alle tue esigenze */
-    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -33,10 +32,21 @@
 /* Stili per i link nella barra di navigazione */
 .navbar-link {
     text-decoration: none;
-    color: #20252b;
-    font-weight: bold;
+    color: #000000; /* Updated color */
+    font-weight: normal; /* Updated to normal weight */
+    font-family: 'Roboto', Arial, sans-serif; /* Added font-family */
+    font-size: 16px; /* Added font-size */
+    line-height: normal; /* Added line-height */
+    text-align: start; /* Added text-align */
+    letter-spacing: normal; /* Added letter-spacing */
+    background-color: #f3f4f6; /* Added background color */
+    padding: 5px 10px; /* Added padding for better spacing */
     margin: 0 10px;
 }
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
 
 /* Stili per il pulsante di accesso */
 .login-button {
@@ -50,11 +60,13 @@
     height: 24px;
     margin-right: 5px;
 }
-
 .login-button button {
-    background-color: #61dafb;
-    color: white;
+    background: none;
+    color: black;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+}
+.login-button:hover{
+    text-decoration: underline;
 }

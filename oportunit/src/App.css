@@ -2,13 +2,10 @@
 
 /* Imposta il colore di sfondo dell'intera app a bianco */
 .App {
-  background-color: #ffffff;
+  background-color: #f3f4f6;
 }
 
-/* Rimuovi il text-align: center; dalla classe .App-header */
 .App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
