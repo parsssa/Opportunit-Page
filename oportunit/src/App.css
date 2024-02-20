@@ -12,3 +12,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.hr-dark {
+  background: #a0a0a0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 2px;
+  border: none;
+  width: 95%;
+}

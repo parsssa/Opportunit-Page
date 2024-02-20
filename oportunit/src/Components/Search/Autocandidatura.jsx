@@ -5,7 +5,7 @@ import './search.css';
 const Autocandidatura = () => {
   return (
     <div className="autocandidatura">
-      <button type="button">Autocandidatura</button>
+      <button type="button" className='autocandidatura-button'>Autocandidatura</button>
     </div>
   );
 };

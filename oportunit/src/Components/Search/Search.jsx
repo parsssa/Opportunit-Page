@@ -18,6 +18,7 @@ const Search = () => {
         <SearchBox />
       </div>
       
+      <div className='search-buttons'>
       <div className="filters-container">
         {filters.map((filter, index) => (
           <Filter key={index} label={filter.label} options={filter.options} />
@@ -26,6 +27,7 @@ const Search = () => {
 
       <div className="autocandidatura">
         <Autocandidatura />
+      </div>
       </div>
     </div>
   );
