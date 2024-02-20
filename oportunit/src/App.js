@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <body>
+      <body className='App-body'>
         <Title />
         <Search />
         <hr classname="hr-dark"/>
@@ -27,8 +27,9 @@ function App() {
         <PosizioniInEvidenza />
         <hr classname="hr-dark"/>
         <PosizioniInEvidenza />
-        <Footer />
+        
       </body>
+      <Footer />
     </div>
   );
 }
