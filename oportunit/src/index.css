@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.logo-img {
+  width: 50px; /* Imposta la larghezza desiderata */
+  height: min-content; /* Imposta l'altezza in base alla larghezza mantenendo l'aspect ratio */
+  /* Puoi regolare la larghezza e l'altezza come preferisci */
+
+}
