@@ -1,12 +1,15 @@
 // Posizione.jsx
-
+import locationPicture from '../../images/location.svg';
 import React from 'react';
 
-const Posizione = ({ title, description }) => {
+const Posizione = ({ title, Location }) => {
   return (
     <div className="posizione">
       <h3>{title}</h3>
-      <p>{description}</p>
+      <div className='location-container'>
+      <img src={locationPicture} alt="Generali Logo" style={{ width: '17px', height: '17px' }} />   
+      <p className='location-text'>{Location}</p>
+      </div>
     </div>
   );
 };
