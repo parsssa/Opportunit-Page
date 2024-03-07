@@ -13,16 +13,25 @@
   color: white;
 }
 
-.hr-dark {
-  background: #a0a0a0;
+
+.hr-light {
+  background: #e7e7e7;
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 2px;
   border: none;
-  width: 95%;
+  width: 100%;
 }
-
+ 
 .App-body{
-  margin-left: 312px;
-  margin-right:312px;
-}
+  margin-left: 100px;
+  margin-right:100px;
+} 
+
+
+/* Stili generici per il layout della pagina
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0 rem;
+  padding: 0 rem;
+} */

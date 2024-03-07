@@ -40,9 +40,11 @@
   background-color: #ffffff;
   color: #6e6f71;
   padding: 10px 20px;
+  width: 200px; /* Set a fixed width for the filter button */
   cursor: pointer;
   box-shadow: none;
   border-radius: 4px;
+  text-align: left;
 }
 
 .dropdown-content {

@@ -1,0 +1,45 @@
+/* posizioniVisualizzazione.css */
+
+/* Stili per il componente PosizioniVisualizzazione */
+.posizioni-visualizzazione-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .posizioni-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  /* Stili per il componente Posizione */
+  .posizione {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 1rem; /* Ridotto rispetto a 7rem per rendere più compatta la visualizzazione */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .location-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .location-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-text {
+    font-size: 14px;
+    color: #333; /* Change the color to a visible one, for example, black (#333) */
+  }
+  

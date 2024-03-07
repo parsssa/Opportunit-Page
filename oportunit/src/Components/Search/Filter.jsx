@@ -1,57 +1,47 @@
-// Filter.jsx
 import React, { useState, useEffect } from 'react';
 import './search.css';
 
-const Filter = ({ label, options, selectedOption = [], onFilterChange }) => {
+const Filter = ({ label, options, onFilterChange }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [optionStatus, setOptionStatus] = useState({});
 
   useEffect(() => {
-    // Ensure "Tutte" is selected by default only on initial load
-    if (selectedOption.length === 0) {
-      const defaultOptions = options.map(option => option.value);
-      onFilterChange(defaultOptions);
-    }
-  }, [options, selectedOption, onFilterChange]);
+    // Inizializza lo stato delle opzioni, tutte impostate su true
+    const initialStatus = options.reduce((acc, option) => {
+      acc[option.value] = true;
+      return acc;
+    }, {});
+    setOptionStatus(initialStatus);
+
+    // Chiamata iniziale per inviare tutte le opzioni selezionate
+    onFilterChange(Object.keys(initialStatus));
+
+  }, [options, onFilterChange]);
 
   const handleCheckboxChange = (value) => {
-    const updatedOptions = selectedOption ? [...selectedOption] : [];
-  
-    if (value === 'Tutte') {
-      // If "Tutte" is checked, select all options
-      const allOptionsChecked = updatedOptions.length === options.length;
-  
-      if (allOptionsChecked) {
-        // Uncheck all options if everything is checked
-        onFilterChange([]);
-      } else {
-        // Check all options
-        const allOptions = options.map(option => option.value);
-        onFilterChange(allOptions);
-      }
-    } else {
-      const index = updatedOptions.indexOf(value);
-  
-      if (index === -1) {
-        updatedOptions.push(value);
-      } else {
-        updatedOptions.splice(index, 1);
-      }
-  
-      // If "Tutte" is unchecked, uncheck all other options
-      const tutteIndex = updatedOptions.indexOf('Tutte');
-      if (tutteIndex !== -1) {
-        updatedOptions.splice(tutteIndex, 1);
-      }
-  
-      onFilterChange(updatedOptions);
-    }
+    // Inverti lo stato dell'opzione cliccata
+    setOptionStatus(prevStatus => ({
+      ...prevStatus,
+      [value]: !prevStatus[value],
+    }));
+
+    // Aggiorna le opzioni selezionate da inviare
+    const selectedOptions = Object.keys(optionStatus).filter(option => optionStatus[option]);
+    onFilterChange(selectedOptions);
+
+    // Mantieni aperta la dropdown dopo l'interazione
+    setIsOpen(true);
   };
-  
-  
+
+  const handleButtonClick = () => {
+    // Inverti lo stato di isOpen quando il pulsante viene cliccato
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="filter">
-      <button className="filter-button" onClick={() => setIsOpen(!isOpen)}>
-        {label}: {selectedOption.includes('Tutte') ? 'Tutte' : ''}
+      <button className="filter-button" onClick={handleButtonClick}>
+        {label}: {Object.values(optionStatus).every(status => status) ? 'Tutte' : ''}
       </button>
       {isOpen && (
         <div className="dropdown-content">
@@ -60,7 +50,7 @@ const Filter = ({ label, options, selectedOption = [], onFilterChange }) => {
               <input
                 type="checkbox"
                 value={option.value}
-                checked={selectedOption && selectedOption.includes(option.value)}
+                checked={optionStatus[option.value]}
                 onChange={() => handleCheckboxChange(option.value)}
               />
               {option.label}
