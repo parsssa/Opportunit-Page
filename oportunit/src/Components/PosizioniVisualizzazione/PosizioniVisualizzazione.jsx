@@ -1,7 +1,7 @@
 // PosizioniVisualizzazione.jsx
-
 import React from 'react';
 import Posizione from './Posizione';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import './posizioniVisualizzazione.css';
 
 const PosizioniVisualizzazione = ({ title, positions }) => {
@@ -15,6 +15,11 @@ const PosizioniVisualizzazione = ({ title, positions }) => {
           <Posizione key={index} {...position} />
         ))}
       </div>
+      {positions.length > 3 && (
+        <Link to={`/viewAllPositions/${title.toLowerCase()}`} className="vedi-tutte-button">
+          Vedi tutte ({positions.length})
+        </Link>
+      )}
     </div>
   );
 };

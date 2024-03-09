@@ -1,0 +1,13 @@
+/* Stili per il componente ViewAllPositions */
+.view-all-positions-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .posizioni-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
