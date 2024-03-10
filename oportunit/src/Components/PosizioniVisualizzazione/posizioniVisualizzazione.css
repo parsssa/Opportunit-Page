@@ -5,21 +5,32 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .posizioni-visualizzazione-container h2{
+    font-size: 35px; /* Aumenta leggermente la dimensione del carattere del titolo principale */
+    color: #333; /* Cambia il colore del testo del titolo principale, ad esempio, a nero (#333) */  
+  }
   
   .posizioni-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
   
   /* Stili per il componente Posizione */
   .posizione {
     border: 1px solid #ddd;
+    border-radius: 20px; /* Aggiungi un bordo arrotondato */
     margin: 10px;
+    width: 30%;
+    height: 14rem;
     padding: 1rem; /* Ridotto rispetto a 7rem per rendere più compatta la visualizzazione */
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: white;
   }
   
   .content-container {

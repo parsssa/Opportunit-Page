@@ -13,7 +13,25 @@ const Home = () => {
     { title: 'Posizione 4', location: 'Location 4' },
     { title: 'Posizione 4', location: 'Location 4' },
     { title: 'Posizione 4', location: 'Location 4' },
-    // Aggiungi altre posizioni secondo necessità
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
   ];
 
   const altrePosizioni = [

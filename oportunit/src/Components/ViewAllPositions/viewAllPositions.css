@@ -1,13 +1,15 @@
-/* Stili per il componente ViewAllPositions */
+/* Aggiorna gli stili nel tuo file viewAllPositions.css */
+
 .view-all-positions-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .posizioni-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-  }
-  
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.posizioni-container {
+  display: flex;
+  flex-wrap: wrap; /* Consenti il wrapping degli elementi su più righe */
+  /* justify-content: space-between; Distribuisci gli elementi su tutta la larghezza della riga */
+  max-width: 1200px; /* Imposta una larghezza massima del contenitore */
+  margin: 0 auto; /* Centra il contenitore nella pagina, modifica se necessario */
+}
+

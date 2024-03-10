@@ -1,6 +1,6 @@
 // ViewAllPositions.jsx
 import React from 'react';
-import Posizione from './Posizione';
+import Posizione from '../PosizioniVisualizzazione/Posizione';
 import { useParams } from 'react-router-dom';
 import './viewAllPositions.css';
 
@@ -18,7 +18,25 @@ const ViewAllPositions = () => {
     { title: 'Posizione 4', location: 'Location 4' },
     { title: 'Posizione 4', location: 'Location 4' },
     { title: 'Posizione 4', location: 'Location 4' },
-    // Add more positions as needed
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
+    { title: 'Posizione 4', location: 'Location 4' },
   ];
 
   return (
